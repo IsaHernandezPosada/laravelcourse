@@ -41,8 +41,8 @@ class Product extends Model
     }
 
     public function getPrice(): int
-    {
-        return $this->attributes['price'];
+{
+    return (int) $this->attributes['price'];
     }
 
     public function setPrice($price): void
